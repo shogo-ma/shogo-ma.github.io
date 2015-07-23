@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Map on log</title>
+    <link>http://localhost:1313/tags/map/</link>
+    <description>Recent content in Map on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jul 2015 04:23:33 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/map/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>golangでmapに要素があるかを調べる</title>
+      <link>http://localhost:1313/post/exist/</link>
+      <pubDate>Fri, 24 Jul 2015 04:23:33 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/exist/</guid>
+      <description>&lt;p&gt;使う割によく忘れるのでメモ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;dict := map[string]int{&amp;quot;a&amp;quot;: 0}
+
+if _, ok := dict[&amp;quot;a&amp;quot;]; !ok {
+    // 要素が無いとき
+} else {
+    // 要素があるとき
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
