@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    Golang | log
+    golangでmap同士を比較する | log
   </title>
 
 
@@ -52,11 +52,9 @@
 
 
   
-  <main id="list" role="main">
-    <div class="article-header light-gray"><h1>#Golang</h1></div>
-    
-    <div class="summary">
-      <h2><a href="http://localhost:1313/post/deepequal/">golangでmap同士を比較する </a></h2>
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>golangでmap同士を比較する</h1>
       <div class="meta">
         Jul 26, 2015 &nbsp;
         
@@ -64,17 +62,39 @@
         
       </div>
     </div>
+    <article>
+      <p>golangでmapを比較するときにどうしたらいいかと思って調べてみると思いの外簡単だった</p>
+
+<pre><code class="language-go">
+import &quot;reflect&quot;
+
+x := map[string]bool{&quot;a&quot; : true, &quot;b&quot; : true}
+y := map[string]bool{&quot;a&quot; : true, &quot;c&quot; : true}
+z := map[string]bool{&quot;a&quot; : true, &quot;b&quot; : true}
+
+reflect.DeepEqual(x, y) // false
+reflect.DeepEqual(x, z) // true
+</code></pre>
+
+<p>reflectって便利</p>
+
+    </article>
     
-    <div class="summary">
-      <h2><a href="http://localhost:1313/post/exist/">golangでmapに要素があるかを調べる </a></h2>
-      <div class="meta">
-        Jul 24, 2015 &nbsp;
-        
-          #<a href="/tags/golang">golang</a>&nbsp;
-        
-      </div>
-    </div>
-    
+
+
+<script type="text/javascript">
+     
+    var disqus_shortname = '';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
   </main>
 
 
