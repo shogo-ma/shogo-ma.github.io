@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
     <lastmod>2015-07-26T03:56:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/deepequal/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/post/deepequal/</loc>
     <lastmod>2015-07-26T03:56:32+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/exist/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/post/exist/</loc>
     <lastmod>2015-07-24T04:23:33+09:00</lastmod>
   </url>
   
