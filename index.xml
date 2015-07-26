@@ -72,7 +72,7 @@ fi
 
 &lt;h2 id=&#34;virtualenvを使って環境を構築:36b4326871019bb570f43b2854147428&#34;&gt;virtualenvを使って環境を構築&lt;/h2&gt;
 
-&lt;p&gt;使う環境を分けたいので、virtualenvを使って、別で新しく環境を作る。以下のコマンドで仮想環境を作成できる。virtualenv-nameには自分でてきおうな名前を入れるといい。&lt;/p&gt;
+&lt;p&gt;使う環境を分けたいので、virtualenvを使って、別で新しく環境を作る。以下のコマンドで仮想環境を作成できる。virtualenv-nameには自分で適当な名前を入れるといい。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pyenv virtualenv 2.7.10 virtualenv-name
 &lt;/code&gt;&lt;/pre&gt;
