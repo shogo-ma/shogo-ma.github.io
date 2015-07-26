@@ -6,8 +6,84 @@
     <description>Recent content on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2015 03:56:32 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2015 21:00:33 +0900</lastBuildDate>
     <atom:link href="http://shogo-ma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>hugoを使ってみる</title>
+      <link>http://shogo-ma.github.io/post/hugo/</link>
+      <pubDate>Sun, 26 Jul 2015 21:00:33 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/hugo/</guid>
+      <description>
+
+&lt;p&gt;自分のログをはてなブログやらevernoteで取ってたけど、気変わりしてhugoを使ってみる。案外詰まったので、作業手順を載せる。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;手順
+
+&lt;ol&gt;
+&lt;li&gt;hugoをinstall&lt;/li&gt;
+&lt;li&gt;themeを選ぶ&lt;/li&gt;
+&lt;li&gt;postするページを作る&lt;/li&gt;
+&lt;li&gt;push&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hugoをinstall:32ab7241d48fcc174c877413a917f8cf&#34;&gt;hugoをinstall&lt;/h2&gt;
+
+&lt;p&gt;hugoをインストールするだけならhomebrewを使うだけで十分。以下のコマンドを入力。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;hugoで管理するディレクトリは以下のコマンドで生成する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new site &amp;quot;directory-name&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;この時に生成されるディレクトリ内のpublicディレクトリを公開すればページを表示することができる。&lt;/p&gt;
+
+&lt;h2 id=&#34;themeを選ぶ:32ab7241d48fcc174c877413a917f8cf&#34;&gt;themeを選ぶ&lt;/h2&gt;
+
+&lt;p&gt;hugoを使う上でのthemeを選択。githubにHugoThemesと公開されているので、そこから選択して使うといい。私は選ぶのが面倒くさかったのでとりあえず全部落として見て試してみる方針。以下のコマンドでは、hugoThemesにあるものをhugoで管理するディレクトリ内にthemesという名前で落としてくる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone --recursive https://github.com/spf13/hugoThemes.git themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;あとはここから落としてきたテーマから自分のお好みのものを選択するだけ&lt;/p&gt;
+
+&lt;h2 id=&#34;postするページを作る:32ab7241d48fcc174c877413a917f8cf&#34;&gt;postするページを作る&lt;/h2&gt;
+
+&lt;p&gt;とっても簡単。ページのテンプレートを作るには以下のコマンドを使用する。以下で生成されたmarkdownのファイルに対して、記事を書いていくという流れになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/&amp;quot;name&amp;quot;.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ページの生成は以下でできる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t theme-name
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ローカルでpreviewしたい場合は以下のコマンド。入力後にlocalhost:1313を開けばどうなっているかを見れる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server -t theme-name
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;push:32ab7241d48fcc174c877413a917f8cf&#34;&gt;push&lt;/h2&gt;
+
+&lt;p&gt;hugoで作ったページはpublicディレクトリの中にあるので、それを丸ごと公開する場においてあげれば終わり。私の場合だとpublicディレクトリをgithubに作ったgithub pagesのリポジトリに突っ込めば見れる。&lt;/p&gt;
+
+&lt;p&gt;他に細かい設定はあるけど、一応はこれで公開までは持っていける。残りやるとすれば&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;default.mdを作る&lt;/li&gt;
+&lt;li&gt;config.tomlのbaseurlを公開するurlに変更&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ぐらい。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>golangでmap同士を比較する</title>
