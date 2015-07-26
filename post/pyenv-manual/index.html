@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    pyenvを使っての環境構築 | log
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+
+  
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/highlight_monokai.css">
+  <link rel="stylesheet/less" href="/css/theme.less">
+  <link rel="stylesheet" href="/css/custom.css">
+
+
+  
+  <script src="/js/less.js" type="text/javascript"></script>
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="/">log</a></h1>
+        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>pyenvを使っての環境構築</h1>
+      <div class="meta">
+        Jul 27, 2015 &nbsp;
+        
+          #<a href="/tags/python">python</a>&nbsp;
+        
+          #<a href="/tags/pyenv">pyenv</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<p>探せばpyenvの使い方的なものは色々溢れてるけど、色々分散していたので個人的なまとめを作る。流れとしては以下の様な感じ</p>
+
+<ul>
+<li>手順
+
+<ol>
+<li>pyenvとpluginをinstall</li>
+<li>pyenvを使ってpythonをinstall</li>
+<li>virtualenvを使って環境を構築</li>
+</ol></li>
+</ul>
+
+<h2 id="pyenvとpluginをinstall:36b4326871019bb570f43b2854147428">pyenvとpluginをinstall</h2>
+
+<p>今回、想定している状況が「apt-getを使う権限がないユーザが異なるpythonをinstallしたい」という感じ。なのでgithubからcloneしてくる。</p>
+
+<pre><code>git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+</code></pre>
+
+<p>次に今回使うpluginをinstall。使いたいのはpyenv-pip-refleshとpyenv-virtualenvの２つ。</p>
+
+<p>pyenv-pip-refleshはpyenvでpythonのversionを切り替えた時に、pyenv rehashというコマンドを使う必要があるのだけど、それをしないで済むplugin。pyenv-virtualenvはpythonの仮想環境を作るpluginになっている。</p>
+
+<p>それぞれ~/.pyenv/pluginsの中にcloneすればinstallが終わり</p>
+
+<pre><code>cd ~/.pyenv/plugins
+git clone https://github.com/yyuu/pyenv-pip-rehash.git
+git clone git://github.com/yyuu/pyenv-virtualenv.git 
+</code></pre>
+
+<p>次は~/.bashrcにpyenvのpathを書く。</p>
+
+<pre><code>export PYENV_ROOT=&quot;$HOME/.pyenv&quot;
+if [ -d &quot;$PYENV_ROOT&quot; ]; then
+    export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;
+    eval &quot;$(pyenv init -)&quot;
+fi
+</code></pre>
+
+<p>これだけでいいなんて、すばらしい。</p>
+
+<h2 id="pyenvを使ってpythonをinstall:36b4326871019bb570f43b2854147428">pyenvを使ってpythonをinstall</h2>
+
+<p>pyenvで自分の欲しいpythonのversionをinstallする。pyenvでinstallできるversionは以下で確認可能。</p>
+
+<pre><code>pyenv install -l
+</code></pre>
+
+<p>今回欲しいversionは2.7系なので、それの中からてきとうなやつをinstallする。下のコマンドを入力して少しすると2.7.10がinstallできる。</p>
+
+<pre><code>pyenv install 2.7.10
+</code></pre>
+
+<h2 id="virtualenvを使って環境を構築:36b4326871019bb570f43b2854147428">virtualenvを使って環境を構築</h2>
+
+<p>使う環境を分けたいので、virtualenvを使って、別で新しく環境を作る。以下のコマンドで仮想環境を作成できる。virtualenv-nameには自分でてきおうな名前を入れるといい。</p>
+
+<pre><code>pyenv virtualenv 2.7.10 virtualenv-name
+</code></pre>
+
+<p>作成した環境を使う場合には以下のコマンド。</p>
+
+<pre><code>pyenv activate virtualenv-name // 環境を使う時
+pyenv deactivate // 環境から抜けたいとき
+</code></pre>
+
+<p>activateすると以下のように言われるので、言われるままに追加すればいい。</p>
+
+<pre><code># Load pyenv-virtualenv automatically by adding
+# the following to ~/.bash_profile:
+
+eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre>
+
+<p>自分の場合だと、~/.bashrcに追加したので以下のような感じ</p>
+
+<pre><code>echo 'eval &quot;$(pyenv virtualenv-init -)&quot;' &gt;&gt; ~/.bashrc
+</code></pre>
+
+<p>作成した環境ごとにpipを使えるので、あとは欲しいライブラリなどを適当にinstallすれば終わり。</p>
+
+    </article>
+    
+
+
+<script type="text/javascript">
+     
+    var disqus_shortname = '';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </main>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</body>
+</html>
+
