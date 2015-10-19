@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pyenv on log</title>
-    <link>http://shogo-ma.github.io/tags/pyenv/</link>
+    <link>http://localhost:1313/tags/pyenv/</link>
     <description>Recent content in Pyenv on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 27 Jul 2015 01:19:31 +0900</lastBuildDate>
-    <atom:link href="http://shogo-ma.github.io/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>pyenvを使っての環境構築</title>
-      <link>http://shogo-ma.github.io/post/pyenv-manual/</link>
+      <link>http://localhost:1313/post/pyenv-manual/</link>
       <pubDate>Mon, 27 Jul 2015 01:19:31 +0900</pubDate>
       
-      <guid>http://shogo-ma.github.io/post/pyenv-manual/</guid>
+      <guid>http://localhost:1313/post/pyenv-manual/</guid>
       <description>
 
 &lt;p&gt;探せばpyenvの使い方的なものは色々溢れてるけど、色々分散していたので個人的なまとめを作る。流れとしては以下の様な感じ&lt;/p&gt;

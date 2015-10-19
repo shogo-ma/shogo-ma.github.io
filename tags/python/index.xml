@@ -2,19 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on log</title>
-    <link>http://shogo-ma.github.io/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <description>Recent content in Python on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 27 Jul 2015 01:19:31 +0900</lastBuildDate>
-    <atom:link href="http://shogo-ma.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2015 01:42:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pythonで編集中のライブラリを読み込む</title>
+      <link>http://localhost:1313/post/editable/</link>
+      <pubDate>Tue, 20 Oct 2015 01:42:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/editable/</guid>
+      <description>&lt;p&gt;研究のために自分でライブラリを書くのは面倒くさいので、ある程度まで書かれてるライブラリの中身をいじるってことをよくやる。
+そうすると&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install .
+pip uninstall &amp;quot;ライブラリ名&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;みたいなことを何度もやるはめになる。とても面倒くさい。&lt;/p&gt;
+
+&lt;p&gt;そんななかで&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install --editable .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;という形でinstallすると、ライブラリを編集中の状態でもそのまま使える。面倒くさいことしなくていいので幸せ。
+細かいことは&lt;a href=&#34;http://pip.readthedocs.org/en/stable/reference/pip_install/#editable-installs&#34;&gt;公式のdocument&lt;/a&gt;に書いてあるので読むといい。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>pyenvを使っての環境構築</title>
-      <link>http://shogo-ma.github.io/post/pyenv-manual/</link>
+      <link>http://localhost:1313/post/pyenv-manual/</link>
       <pubDate>Mon, 27 Jul 2015 01:19:31 +0900</pubDate>
       
-      <guid>http://shogo-ma.github.io/post/pyenv-manual/</guid>
+      <guid>http://localhost:1313/post/pyenv-manual/</guid>
       <description>
 
 &lt;p&gt;探せばpyenvの使い方的なものは色々溢れてるけど、色々分散していたので個人的なまとめを作る。流れとしては以下の様な感じ&lt;/p&gt;
