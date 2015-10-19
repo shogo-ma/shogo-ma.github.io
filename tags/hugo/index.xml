@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on log</title>
-    <link>http://localhost:1313/tags/hugo/</link>
+    <link>http://shogo-ma.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 26 Jul 2015 21:00:33 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://shogo-ma.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>hugoを使ってみる</title>
-      <link>http://localhost:1313/post/hugo/</link>
+      <link>http://shogo-ma.github.io/post/hugo/</link>
       <pubDate>Sun, 26 Jul 2015 21:00:33 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/hugo/</guid>
+      <guid>http://shogo-ma.github.io/post/hugo/</guid>
       <description>
 
 &lt;p&gt;自分のログをはてなブログやらevernoteで取ってたけど、気変わりしてhugoを使ってみる。案外詰まったので、作業手順を載せる。&lt;/p&gt;

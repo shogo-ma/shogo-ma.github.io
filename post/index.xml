@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on log</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://shogo-ma.github.io/post/</link>
     <description>Recent content in Posts on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 20 Oct 2015 01:42:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://shogo-ma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>pythonで編集中のライブラリを読み込む</title>
-      <link>http://localhost:1313/post/editable/</link>
+      <link>http://shogo-ma.github.io/post/editable/</link>
       <pubDate>Tue, 20 Oct 2015 01:42:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/editable/</guid>
+      <guid>http://shogo-ma.github.io/post/editable/</guid>
       <description>&lt;p&gt;研究のために自分でライブラリを書くのは面倒くさいので、ある程度まで書かれてるライブラリの中身をいじるってことをよくやる。
 そうすると&lt;/p&gt;
 
@@ -36,10 +36,10 @@ pip uninstall &amp;quot;ライブラリ名&amp;quot;
     
     <item>
       <title>pyenvを使っての環境構築</title>
-      <link>http://localhost:1313/post/pyenv-manual/</link>
+      <link>http://shogo-ma.github.io/post/pyenv-manual/</link>
       <pubDate>Mon, 27 Jul 2015 01:19:31 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/pyenv-manual/</guid>
+      <guid>http://shogo-ma.github.io/post/pyenv-manual/</guid>
       <description>
 
 &lt;p&gt;探せばpyenvの使い方的なものは色々溢れてるけど、色々分散していたので個人的なまとめを作る。流れとしては以下の様な感じ&lt;/p&gt;
@@ -127,10 +127,10 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
     
     <item>
       <title>hugoを使ってみる</title>
-      <link>http://localhost:1313/post/hugo/</link>
+      <link>http://shogo-ma.github.io/post/hugo/</link>
       <pubDate>Sun, 26 Jul 2015 21:00:33 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/hugo/</guid>
+      <guid>http://shogo-ma.github.io/post/hugo/</guid>
       <description>
 
 &lt;p&gt;自分のログをはてなブログやらevernoteで取ってたけど、気変わりしてhugoを使ってみる。案外詰まったので、作業手順を載せる。&lt;/p&gt;
@@ -203,10 +203,10 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
     
     <item>
       <title>golangでmap同士を比較する</title>
-      <link>http://localhost:1313/post/deepequal/</link>
+      <link>http://shogo-ma.github.io/post/deepequal/</link>
       <pubDate>Sun, 26 Jul 2015 03:56:32 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/deepequal/</guid>
+      <guid>http://shogo-ma.github.io/post/deepequal/</guid>
       <description>&lt;p&gt;golangでmapを比較するときにどうしたらいいかと思って調べてみると思いの外簡単だった&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
@@ -226,10 +226,10 @@ reflect.DeepEqual(x, z) // true
     
     <item>
       <title>golangでmapに要素があるかを調べる</title>
-      <link>http://localhost:1313/post/exist/</link>
+      <link>http://shogo-ma.github.io/post/exist/</link>
       <pubDate>Fri, 24 Jul 2015 04:23:33 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/exist/</guid>
+      <guid>http://shogo-ma.github.io/post/exist/</guid>
       <description>&lt;p&gt;使う割によく忘れるのでメモ&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;dict := map[string]int{&amp;quot;a&amp;quot;: 0}
