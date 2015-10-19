@@ -30,7 +30,17 @@ pip uninstall &amp;quot;ライブラリ名&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;という形でinstallすると、ライブラリを編集中の状態でもそのまま使える。面倒くさいことしなくていいので幸せ。
-細かいことは&lt;a href=&#34;http://pip.readthedocs.org/en/stable/reference/pip_install/#editable-installs&#34;&gt;公式のdocument&lt;/a&gt;に書いてあるので読むといい。&lt;/p&gt;
+細かいことは&lt;a href=&#34;http://pip.readthedocs.org/en/stable/reference/pip_install/#editable-installs&#34;&gt;公式のdocument&lt;/a&gt;に書いてあるので読むと幸せになれるかもしれない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about page</title>
+      <link>http://localhost:1313/about-page/</link>
+      <pubDate>Tue, 20 Oct 2015 01:41:36 +0900</pubDate>
+      
+      <guid>http://localhost:1313/about-page/</guid>
+      <description>&lt;p&gt;about page&lt;/p&gt;
 </description>
     </item>
     
