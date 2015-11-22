@@ -6,8 +6,27 @@
     <description>Recent content on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Oct 2015 03:06:07 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2015 02:35:36 +0900</lastBuildDate>
     <atom:link href="http://shogo-ma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>louvain法を実装してみた</title>
+      <link>http://shogo-ma.github.io/post/louvain/</link>
+      <pubDate>Mon, 23 Nov 2015 02:35:36 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/louvain/</guid>
+      <description>&lt;p&gt;最近，コミュニティ抽出について色々調べていて，そのベースライン的な立ち位置な論文があったので実装してみたという話&lt;/p&gt;
+
+&lt;p&gt;論文は以下のとおり.
+&lt;a href=&#34;http://arxiv.org/abs/0803.0476&#34;&gt;Fast unfolding of communities in large networks&lt;/a&gt;. Vincent D. Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre.)]&lt;/p&gt;
+
+&lt;p&gt;概要を簡単に説明すると，コミュニティ抽出には基本的な手法としてNewman法と呼ばれる手法がある，この手法は貪欲的にクラスタリングを行っていく手法で，全ノードに対して最も評価値が高くなるようなノード同士をmergeするという方法になっている．そのためノード対を探索する際の計算時間が非常にかかるという欠点がある．そこで，Louvain法では，全ノードではなく，対象としている周辺ノードのみを探索し，最も評価が高くなるノードをmergeするという方法を取ることで高速化を実現した．という話.&lt;/p&gt;
+
+&lt;p&gt;実装したコードは&lt;a href=&#34;https://github.com/shogo-ma/louvain-python&#34;&gt;ここ&lt;/a&gt;においてあります．入力のgraphはpythonのgraphライブラリのnetworkxのGraphを使います．基本的に重み付き無向グラフのみしか使えません．一応それっぽく動いていると思います．&lt;/p&gt;
+
+&lt;p&gt;次はコミュニティ抽出の基本についてまとめましょうかね．&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>kaggleデビューしてみた</title>
