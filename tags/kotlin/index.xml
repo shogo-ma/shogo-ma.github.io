@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kotlin on log</title>
+    <link>http://shogo-ma.github.io/tags/kotlin/</link>
+    <description>Recent content in Kotlin on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 May 2016 00:03:52 +0900</lastBuildDate>
+    <atom:link href="http://shogo-ma.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>kotlin入門: android studioでkotlinを使う</title>
+      <link>http://shogo-ma.github.io/post/kotlin-first/</link>
+      <pubDate>Sat, 14 May 2016 00:03:52 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/kotlin-first/</guid>
+      <description>
+
+&lt;p&gt;androidのアプリ開発でkotlinが話題らしいので，触ってみることにした．
+アプリ開発はあまり経験がないが，この際新しくて面白そうということで色々挑戦してみる．&lt;/p&gt;
+
+&lt;p&gt;今回はandroid studioでkotlinのソースコードを実行するまでをやってみる．&lt;/p&gt;
+
+&lt;p&gt;流れとしては以下のような感じ．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;android studioにkotlin pluginを導入&lt;/li&gt;
+&lt;li&gt;作成したプロジェクトのjavaのソースコードをkotlinに変換する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;android-studioにkotlin-pluginを導入:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;android studioにkotlin pluginを導入&lt;/h2&gt;
+
+&lt;p&gt;手順は簡単．
+- android studioのメニューバーでpreference &amp;gt; Pluginsを選ぶ．
+- PluginsのInstall JetBrains pluginを選ぶ
+- kotlinで検索してKotlin pluginをインストール&lt;/p&gt;
+
+&lt;p&gt;で終わり．&lt;/p&gt;
+
+&lt;h2 id=&#34;作成したプロジェクトのjavaのソースコードをkotlinに変換する:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;作成したプロジェクトのjavaのソースコードをkotlinに変換する&lt;/h2&gt;
+
+&lt;p&gt;こちらはもっと簡単．
+- android studioのメニューバーでCode &amp;gt; Convert Java File to Kotlin Fileを選択する．&lt;/p&gt;
+
+&lt;p&gt;で，元の.javaのファイルが.ktのファイルに変換されます．
+後は実行するだけ．場合（自分でもよく分かってない）によっては，オプショナル関連で落ちることがあるけど，それは単純に?をつければいいだけ．&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;一応サンプルがbuildできるようになったので，実際になんか作ってみようと思う．
+あと，適当に調べながらやるつもりなので，適宜このメモ帳を更新していく．&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
