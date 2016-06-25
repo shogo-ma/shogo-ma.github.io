@@ -6,8 +6,131 @@
     <description>Recent content in Posts on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 May 2016 00:03:52 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jun 2016 09:41:43 +0900</lastBuildDate>
     <atom:link href="http://shogo-ma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>そろそろなんかしないといけないかな</title>
+      <link>http://shogo-ma.github.io/post/201606-summary/</link>
+      <pubDate>Sat, 25 Jun 2016 09:41:43 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/201606-summary/</guid>
+      <description>
+
+&lt;p&gt;社会人になって早三ヶ月．会社の雰囲気になれるので手一杯で開発みたいなことは全くしていなかったので，何か作ろうかなと思っている．まぁ特に案はないのだけど．．．
+加えて，自身の趣味の進捗管理的な意味で記録を書いていきたい．&lt;/p&gt;
+
+&lt;p&gt;今興味があるのは&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Androidアプリ開発&lt;/li&gt;
+&lt;li&gt;iOSアプリ開発&lt;/li&gt;
+&lt;li&gt;GoLang&lt;/li&gt;
+&lt;li&gt;vimのプラグイン開発&lt;/li&gt;
+&lt;li&gt;ソフトウェア工学
+
+&lt;ul&gt;
+&lt;li&gt;ソースコードの定量評価&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の4つ．&lt;/p&gt;
+
+&lt;p&gt;この中だとAndroidアプリ開発が遊びやすそうなので，当面はAndroidアプリを作って遊ぼうかなー．最近はKotlinも出てきてるので，ついでに遊べればと思う．&lt;/p&gt;
+
+&lt;h2 id=&#34;来月の目標&#34;&gt;来月の目標&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Androidアプリの本を読む&lt;/li&gt;
+&lt;li&gt;俺の日常を改善する系のアプリを考える&lt;/li&gt;
+&lt;li&gt;kotlinに慣れる&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>自分用Vimメモ</title>
+      <link>http://shogo-ma.github.io/post/vim-memo/</link>
+      <pubDate>Sun, 05 Jun 2016 01:21:00 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/vim-memo/</guid>
+      <description>
+
+&lt;h2 id=&#34;キーマップ&#34;&gt;キーマップ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;全てでマップ
+
+&lt;ul&gt;
+&lt;li&gt;map(再割り当てあり), noremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;insert modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;imap(再割り当てあり), inoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;visual modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;vmap(再割り当てあり), vnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;command modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;cmap(再割り当てあり), cnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;normal modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;nmap(再割り当てあり), nnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;スコープ&#34;&gt;スコープ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ローカルスコープ
+
+&lt;ul&gt;
+&lt;li&gt;l:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;グローバルスコープ
+
+&lt;ul&gt;
+&lt;li&gt;g:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;スクリプトスコープ
+
+&lt;ul&gt;
+&lt;li&gt;s:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;プラグイン作り&#34;&gt;プラグイン作り&lt;/h2&gt;
+
+&lt;h3 id=&#34;pluginとautoloadの違い&#34;&gt;pluginとautoloadの違い&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;pluginは実際にプラグインを使う上での必要最低限のものを記述したvimファイルを配置しておく&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;commandなど&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;autoloadはpluginには置けないような重たい処理を記述したvimファイルを配置する&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;autocmd
+
+&lt;ul&gt;
+&lt;li&gt;バッファが作成された時のイベント処理&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>kotlin入門: android studioでkotlinを使う</title>
@@ -29,7 +152,7 @@
 &lt;li&gt;作成したプロジェクトのjavaのソースコードをkotlinに変換する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;android-studioにkotlin-pluginを導入:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;android studioにkotlin pluginを導入&lt;/h2&gt;
+&lt;h2 id=&#34;android-studioにkotlin-pluginを導入&#34;&gt;android studioにkotlin pluginを導入&lt;/h2&gt;
 
 &lt;p&gt;手順は簡単．
 - android studioのメニューバーでpreference &amp;gt; Pluginsを選ぶ．
@@ -38,7 +161,7 @@
 
 &lt;p&gt;で終わり．&lt;/p&gt;
 
-&lt;h2 id=&#34;作成したプロジェクトのjavaのソースコードをkotlinに変換する:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;作成したプロジェクトのjavaのソースコードをkotlinに変換する&lt;/h2&gt;
+&lt;h2 id=&#34;作成したプロジェクトのjavaのソースコードをkotlinに変換する&#34;&gt;作成したプロジェクトのjavaのソースコードをkotlinに変換する&lt;/h2&gt;
 
 &lt;p&gt;こちらはもっと簡単．
 - android studioのメニューバーでCode &amp;gt; Convert Java File to Kotlin Fileを選択する．&lt;/p&gt;
@@ -46,7 +169,7 @@
 &lt;p&gt;で，元の.javaのファイルが.ktのファイルに変換されます．
 後は実行するだけ．場合（自分でもよく分かってない）によっては，オプショナル関連で落ちることがあるけど，それは単純に?をつければいいだけ．&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:de6cdc2fb9874db25c9181a8caf7a8be&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;一応サンプルがbuildできるようになったので，実際になんか作ってみようと思う．
 あと，適当に調べながらやるつもりなので，適宜このメモ帳を更新していく．&lt;/p&gt;
@@ -142,7 +265,7 @@ pip uninstall &amp;quot;ライブラリ名&amp;quot;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;pyenvとpluginをinstall:36b4326871019bb570f43b2854147428&#34;&gt;pyenvとpluginをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;pyenvとpluginをinstall&#34;&gt;pyenvとpluginをinstall&lt;/h2&gt;
 
 &lt;p&gt;今回、想定している状況が「apt-getを使う権限がないユーザが異なるpythonをinstallしたい」という感じ。なのでgithubからcloneしてくる。&lt;/p&gt;
 
@@ -171,7 +294,7 @@ fi
 
 &lt;p&gt;これだけでいいなんて、すばらしい。&lt;/p&gt;
 
-&lt;h2 id=&#34;pyenvを使ってpythonをinstall:36b4326871019bb570f43b2854147428&#34;&gt;pyenvを使ってpythonをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;pyenvを使ってpythonをinstall&#34;&gt;pyenvを使ってpythonをinstall&lt;/h2&gt;
 
 &lt;p&gt;pyenvで自分の欲しいpythonのversionをinstallする。pyenvでinstallできるversionは以下で確認可能。&lt;/p&gt;
 
@@ -183,7 +306,7 @@ fi
 &lt;pre&gt;&lt;code&gt;pyenv install 2.7.10
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtualenvを使って環境を構築:36b4326871019bb570f43b2854147428&#34;&gt;virtualenvを使って環境を構築&lt;/h2&gt;
+&lt;h2 id=&#34;virtualenvを使って環境を構築&#34;&gt;virtualenvを使って環境を構築&lt;/h2&gt;
 
 &lt;p&gt;使う環境を分けたいので、virtualenvを使って、別で新しく環境を作る。以下のコマンドで仮想環境を作成できる。virtualenv-nameには自分で適当な名前を入れるといい。&lt;/p&gt;
 
@@ -234,7 +357,7 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;hugoをinstall:32ab7241d48fcc174c877413a917f8cf&#34;&gt;hugoをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;hugoをinstall&#34;&gt;hugoをinstall&lt;/h2&gt;
 
 &lt;p&gt;hugoをインストールするだけならhomebrewを使うだけで十分。以下のコマンドを入力。&lt;/p&gt;
 
@@ -248,7 +371,7 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
 
 &lt;p&gt;この時に生成されるディレクトリ内のpublicディレクトリを公開すればページを表示することができる。&lt;/p&gt;
 
-&lt;h2 id=&#34;themeを選ぶ:32ab7241d48fcc174c877413a917f8cf&#34;&gt;themeを選ぶ&lt;/h2&gt;
+&lt;h2 id=&#34;themeを選ぶ&#34;&gt;themeを選ぶ&lt;/h2&gt;
 
 &lt;p&gt;hugoを使う上でのthemeを選択。githubにHugoThemesと公開されているので、そこから選択して使うといい。私は選ぶのが面倒くさかったのでとりあえず全部落として見て試してみる方針。以下のコマンドでは、hugoThemesにあるものをhugoで管理するディレクトリ内にthemesという名前で落としてくる。&lt;/p&gt;
 
@@ -257,7 +380,7 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
 
 &lt;p&gt;あとはここから落としてきたテーマから自分のお好みのものを選択するだけ&lt;/p&gt;
 
-&lt;h2 id=&#34;postするページを作る:32ab7241d48fcc174c877413a917f8cf&#34;&gt;postするページを作る&lt;/h2&gt;
+&lt;h2 id=&#34;postするページを作る&#34;&gt;postするページを作る&lt;/h2&gt;
 
 &lt;p&gt;とっても簡単。ページのテンプレートを作るには以下のコマンドを使用する。以下で生成されたmarkdownのファイルに対して、記事を書いていくという流れになる。&lt;/p&gt;
 
@@ -274,7 +397,7 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
 &lt;pre&gt;&lt;code&gt;hugo server -t theme-name
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;push:32ab7241d48fcc174c877413a917f8cf&#34;&gt;push&lt;/h2&gt;
+&lt;h2 id=&#34;push&#34;&gt;push&lt;/h2&gt;
 
 &lt;p&gt;hugoで作ったページはpublicディレクトリの中にあるので、それを丸ごと公開する場においてあげれば終わり。私の場合だとpublicディレクトリをgithubに作ったgithub pagesのリポジトリに突っ込めば見れる。&lt;/p&gt;
 

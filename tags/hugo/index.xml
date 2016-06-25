@@ -30,7 +30,7 @@
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;hugoをinstall:32ab7241d48fcc174c877413a917f8cf&#34;&gt;hugoをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;hugoをinstall&#34;&gt;hugoをinstall&lt;/h2&gt;
 
 &lt;p&gt;hugoをインストールするだけならhomebrewを使うだけで十分。以下のコマンドを入力。&lt;/p&gt;
 
@@ -44,7 +44,7 @@
 
 &lt;p&gt;この時に生成されるディレクトリ内のpublicディレクトリを公開すればページを表示することができる。&lt;/p&gt;
 
-&lt;h2 id=&#34;themeを選ぶ:32ab7241d48fcc174c877413a917f8cf&#34;&gt;themeを選ぶ&lt;/h2&gt;
+&lt;h2 id=&#34;themeを選ぶ&#34;&gt;themeを選ぶ&lt;/h2&gt;
 
 &lt;p&gt;hugoを使う上でのthemeを選択。githubにHugoThemesと公開されているので、そこから選択して使うといい。私は選ぶのが面倒くさかったのでとりあえず全部落として見て試してみる方針。以下のコマンドでは、hugoThemesにあるものをhugoで管理するディレクトリ内にthemesという名前で落としてくる。&lt;/p&gt;
 
@@ -53,7 +53,7 @@
 
 &lt;p&gt;あとはここから落としてきたテーマから自分のお好みのものを選択するだけ&lt;/p&gt;
 
-&lt;h2 id=&#34;postするページを作る:32ab7241d48fcc174c877413a917f8cf&#34;&gt;postするページを作る&lt;/h2&gt;
+&lt;h2 id=&#34;postするページを作る&#34;&gt;postするページを作る&lt;/h2&gt;
 
 &lt;p&gt;とっても簡単。ページのテンプレートを作るには以下のコマンドを使用する。以下で生成されたmarkdownのファイルに対して、記事を書いていくという流れになる。&lt;/p&gt;
 
@@ -70,7 +70,7 @@
 &lt;pre&gt;&lt;code&gt;hugo server -t theme-name
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;push:32ab7241d48fcc174c877413a917f8cf&#34;&gt;push&lt;/h2&gt;
+&lt;h2 id=&#34;push&#34;&gt;push&lt;/h2&gt;
 
 &lt;p&gt;hugoで作ったページはpublicディレクトリの中にあるので、それを丸ごと公開する場においてあげれば終わり。私の場合だとpublicディレクトリをgithubに作ったgithub pagesのリポジトリに突っ込めば見れる。&lt;/p&gt;
 

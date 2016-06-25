@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>月まとめ on log</title>
+    <link>http://shogo-ma.github.io/tags/%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
+    <description>Recent content in 月まとめ on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 25 Jun 2016 09:41:43 +0900</lastBuildDate>
+    <atom:link href="http://shogo-ma.github.io/tags/%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>そろそろなんかしないといけないかな</title>
+      <link>http://shogo-ma.github.io/post/201606-summary/</link>
+      <pubDate>Sat, 25 Jun 2016 09:41:43 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/201606-summary/</guid>
+      <description>
+
+&lt;p&gt;社会人になって早三ヶ月．会社の雰囲気になれるので手一杯で開発みたいなことは全くしていなかったので，何か作ろうかなと思っている．まぁ特に案はないのだけど．．．
+加えて，自身の趣味の進捗管理的な意味で記録を書いていきたい．&lt;/p&gt;
+
+&lt;p&gt;今興味があるのは&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Androidアプリ開発&lt;/li&gt;
+&lt;li&gt;iOSアプリ開発&lt;/li&gt;
+&lt;li&gt;GoLang&lt;/li&gt;
+&lt;li&gt;vimのプラグイン開発&lt;/li&gt;
+&lt;li&gt;ソフトウェア工学
+
+&lt;ul&gt;
+&lt;li&gt;ソースコードの定量評価&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の4つ．&lt;/p&gt;
+
+&lt;p&gt;この中だとAndroidアプリ開発が遊びやすそうなので，当面はAndroidアプリを作って遊ぼうかなー．最近はKotlinも出てきてるので，ついでに遊べればと思う．&lt;/p&gt;
+
+&lt;h2 id=&#34;来月の目標&#34;&gt;来月の目標&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Androidアプリの本を読む&lt;/li&gt;
+&lt;li&gt;俺の日常を改善する系のアプリを考える&lt;/li&gt;
+&lt;li&gt;kotlinに慣れる&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

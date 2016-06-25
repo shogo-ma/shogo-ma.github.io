@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    kotlin入門: android studioでkotlinを使う | log
+    自分用Vimメモ | log
   </title>
 
 
@@ -55,54 +55,90 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>kotlin入門: android studioでkotlinを使う</h1>
+      <h1>自分用Vimメモ</h1>
       <div class="meta">
-        May 14, 2016 &nbsp;
+        Jun 5, 2016 &nbsp;
         
-          #<a href="/tags/android">android</a>&nbsp;
-        
-          #<a href="/tags/android-studio">android studio</a>&nbsp;
-        
-          #<a href="/tags/kotlin">kotlin</a>&nbsp;
+          #<a href="/tags/vim">vim</a>&nbsp;
         
       </div>
     </div>
     <article>
       
 
-<p>androidのアプリ開発でkotlinが話題らしいので，触ってみることにした．
-アプリ開発はあまり経験がないが，この際新しくて面白そうということで色々挑戦してみる．</p>
-
-<p>今回はandroid studioでkotlinのソースコードを実行するまでをやってみる．</p>
-
-<p>流れとしては以下のような感じ．</p>
+<h2 id="キーマップ">キーマップ</h2>
 
 <ul>
-<li>android studioにkotlin pluginを導入</li>
-<li>作成したプロジェクトのjavaのソースコードをkotlinに変換する</li>
+<li>全てでマップ
+
+<ul>
+<li>map(再割り当てあり), noremap(再割り当てなし)</li>
+</ul></li>
+<li>insert modeでマップ
+
+<ul>
+<li>imap(再割り当てあり), inoremap(再割り当てなし)</li>
+</ul></li>
+<li>visual modeでマップ
+
+<ul>
+<li>vmap(再割り当てあり), vnoremap(再割り当てなし)</li>
+</ul></li>
+<li>command modeでマップ
+
+<ul>
+<li>cmap(再割り当てあり), cnoremap(再割り当てなし)</li>
+</ul></li>
+<li>normal modeでマップ
+
+<ul>
+<li>nmap(再割り当てあり), nnoremap(再割り当てなし)</li>
+</ul></li>
 </ul>
 
-<h2 id="android-studioにkotlin-pluginを導入">android studioにkotlin pluginを導入</h2>
+<h2 id="スコープ">スコープ</h2>
 
-<p>手順は簡単．
-- android studioのメニューバーでpreference &gt; Pluginsを選ぶ．
-- PluginsのInstall JetBrains pluginを選ぶ
-- kotlinで検索してKotlin pluginをインストール</p>
+<ul>
+<li>ローカルスコープ
 
-<p>で終わり．</p>
+<ul>
+<li>l:</li>
+</ul></li>
+<li>グローバルスコープ
 
-<h2 id="作成したプロジェクトのjavaのソースコードをkotlinに変換する">作成したプロジェクトのjavaのソースコードをkotlinに変換する</h2>
+<ul>
+<li>g:</li>
+</ul></li>
+<li>スクリプトスコープ
 
-<p>こちらはもっと簡単．
-- android studioのメニューバーでCode &gt; Convert Java File to Kotlin Fileを選択する．</p>
+<ul>
+<li>s:</li>
+</ul></li>
+</ul>
 
-<p>で，元の.javaのファイルが.ktのファイルに変換されます．
-後は実行するだけ．場合（自分でもよく分かってない）によっては，オプショナル関連で落ちることがあるけど，それは単純に?をつければいいだけ．</p>
+<h2 id="プラグイン作り">プラグイン作り</h2>
 
-<h2 id="まとめ">まとめ</h2>
+<h3 id="pluginとautoloadの違い">pluginとautoloadの違い</h3>
 
-<p>一応サンプルがbuildできるようになったので，実際になんか作ってみようと思う．
-あと，適当に調べながらやるつもりなので，適宜このメモ帳を更新していく．</p>
+<ul>
+<li><p>pluginは実際にプラグインを使う上での必要最低限のものを記述したvimファイルを配置しておく</p>
+
+<ul>
+<li>commandなど</li>
+</ul></li>
+
+<li><p>autoloadはpluginには置けないような重たい処理を記述したvimファイルを配置する</p></li>
+</ul>
+
+<h2 id="その他">その他</h2>
+
+<ul>
+<li>autocmd
+
+<ul>
+<li>バッファが作成された時のイベント処理</li>
+</ul></li>
+</ul>
 
     </article>
     

@@ -29,7 +29,7 @@
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;pyenvとpluginをinstall:36b4326871019bb570f43b2854147428&#34;&gt;pyenvとpluginをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;pyenvとpluginをinstall&#34;&gt;pyenvとpluginをinstall&lt;/h2&gt;
 
 &lt;p&gt;今回、想定している状況が「apt-getを使う権限がないユーザが異なるpythonをinstallしたい」という感じ。なのでgithubからcloneしてくる。&lt;/p&gt;
 
@@ -58,7 +58,7 @@ fi
 
 &lt;p&gt;これだけでいいなんて、すばらしい。&lt;/p&gt;
 
-&lt;h2 id=&#34;pyenvを使ってpythonをinstall:36b4326871019bb570f43b2854147428&#34;&gt;pyenvを使ってpythonをinstall&lt;/h2&gt;
+&lt;h2 id=&#34;pyenvを使ってpythonをinstall&#34;&gt;pyenvを使ってpythonをinstall&lt;/h2&gt;
 
 &lt;p&gt;pyenvで自分の欲しいpythonのversionをinstallする。pyenvでinstallできるversionは以下で確認可能。&lt;/p&gt;
 
@@ -70,7 +70,7 @@ fi
 &lt;pre&gt;&lt;code&gt;pyenv install 2.7.10
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtualenvを使って環境を構築:36b4326871019bb570f43b2854147428&#34;&gt;virtualenvを使って環境を構築&lt;/h2&gt;
+&lt;h2 id=&#34;virtualenvを使って環境を構築&#34;&gt;virtualenvを使って環境を構築&lt;/h2&gt;
 
 &lt;p&gt;使う環境を分けたいので、virtualenvを使って、別で新しく環境を作る。以下のコマンドで仮想環境を作成できる。virtualenv-nameには自分で適当な名前を入れるといい。&lt;/p&gt;
 

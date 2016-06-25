@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on log</title>
+    <link>http://shogo-ma.github.io/tags/vim/</link>
+    <description>Recent content in Vim on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 05 Jun 2016 01:21:00 +0900</lastBuildDate>
+    <atom:link href="http://shogo-ma.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>自分用Vimメモ</title>
+      <link>http://shogo-ma.github.io/post/vim-memo/</link>
+      <pubDate>Sun, 05 Jun 2016 01:21:00 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/vim-memo/</guid>
+      <description>
+
+&lt;h2 id=&#34;キーマップ&#34;&gt;キーマップ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;全てでマップ
+
+&lt;ul&gt;
+&lt;li&gt;map(再割り当てあり), noremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;insert modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;imap(再割り当てあり), inoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;visual modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;vmap(再割り当てあり), vnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;command modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;cmap(再割り当てあり), cnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;normal modeでマップ
+
+&lt;ul&gt;
+&lt;li&gt;nmap(再割り当てあり), nnoremap(再割り当てなし)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;スコープ&#34;&gt;スコープ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ローカルスコープ
+
+&lt;ul&gt;
+&lt;li&gt;l:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;グローバルスコープ
+
+&lt;ul&gt;
+&lt;li&gt;g:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;スクリプトスコープ
+
+&lt;ul&gt;
+&lt;li&gt;s:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;プラグイン作り&#34;&gt;プラグイン作り&lt;/h2&gt;
+
+&lt;h3 id=&#34;pluginとautoloadの違い&#34;&gt;pluginとautoloadの違い&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;pluginは実際にプラグインを使う上での必要最低限のものを記述したvimファイルを配置しておく&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;commandなど&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;autoloadはpluginには置けないような重たい処理を記述したvimファイルを配置する&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;autocmd
+
+&lt;ul&gt;
+&lt;li&gt;バッファが作成された時のイベント処理&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
