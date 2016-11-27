@@ -2,12 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>log</title>
-    <link>http://shogo-ma.github.io/</link>
+    <link>http://shogo-ma.github.io/index.xml</link>
     <description>Recent content on log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 14 Aug 2016 15:13:12 +0900</lastBuildDate>
+    <copyright>Written by shogo-ma</copyright>
+    <lastBuildDate>Sun, 27 Nov 2016 21:19:49 +0900</lastBuildDate>
     <atom:link href="http://shogo-ma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>github pageを独自ドメインで見れるようにした</title>
+      <link>http://shogo-ma.github.io/post/my-domain/</link>
+      <pubDate>Sun, 27 Nov 2016 21:19:49 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/my-domain/</guid>
+      <description>
+
+&lt;p&gt;ついにうちに机とイスがやってきたので，これからは色々作業できそう．たぶん．&lt;/p&gt;
+
+&lt;p&gt;ここ最近，びっくりするぐらい休日に自宅でPCを触っていなかったのだけど，たまたま休日に作業する日があったので，その場のノリでgithub pageを独自ドメインで見れるようにしてみた．&lt;/p&gt;
+
+&lt;p&gt;やり方はとても簡単．&lt;/p&gt;
+
+&lt;p&gt;自身のgithub pageのリポジトリにCNAMEというファイル名で独自ドメインのurlを乗っけるだけ．&lt;/p&gt;
+
+&lt;p&gt;自分の場合はCNAMEというファイルを作って以下の内容で書き込んだだけ．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# CNAME
+asahima.tech
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;あとは時間がたてば自然に見れるようになる．&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;p&gt;特に理由もなくgithub pageを独自ドメインで見れるようにしてみた．せっかく独自ドメインで見れるようにしたので，もうちょい勉強ログを載せられたらと思う．input自体はかなり増えてるので（毎朝二時間ぐらいは技術書読み漁ってる），その辺をまとめていきたい．&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>作業できない</title>
