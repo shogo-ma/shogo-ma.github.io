@@ -299,12 +299,26 @@ pip uninstall &amp;quot;ライブラリ名&amp;quot;
     </item>
     
     <item>
-      <title>about page</title>
-      <link>http://shogo-ma.github.io/about-page/</link>
+      <title>About</title>
+      <link>http://shogo-ma.github.io/about/</link>
       <pubDate>Tue, 20 Oct 2015 01:41:36 +0900</pubDate>
       
-      <guid>http://shogo-ma.github.io/about-page/</guid>
-      <description>&lt;p&gt;about page&lt;/p&gt;
+      <guid>http://shogo-ma.github.io/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;interests&#34;&gt;Interests&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Programming (Python, Golang, Kotlin)&lt;/li&gt;
+&lt;li&gt;Natural Language Processing&lt;/li&gt;
+&lt;li&gt;Sake&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;contacts&#34;&gt;Contacts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://asahima.tech&#34;&gt;Github: shogo-ma&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
