@@ -10,6 +10,74 @@
     <atom:link href="http://shogo-ma.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>AndroidでのPullToRefreshの実装</title>
+      <link>http://shogo-ma.github.io/post/pulltorefresh/</link>
+      <pubDate>Fri, 16 Dec 2016 23:38:27 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/pulltorefresh/</guid>
+      <description>
+
+&lt;p&gt;練習がてらに適当なAPIを叩いて取得した結果のリストをRecyclerViewで表示するみたいなことをしているのだけど，ただ使っているだけではなんともそれっぽくない感じだったので追加機能としてPullToRefreshを試しに実装してみた．&lt;/p&gt;
+
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+
+&lt;p&gt;自分の環境をざっくり書く．そこまで気にしなくていい．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android Studio 2.2.3&lt;/li&gt;
+&lt;li&gt;zenfone3 (Android 6.0)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;やり方&#34;&gt;やり方&lt;/h2&gt;
+
+&lt;p&gt;使ったのはSwipeRefreshLayouというやつで．Support Libraryのv4から入ったViewGroupになる．公式のdocumentを読む限りでは，縦方向のジェスチャーによってViewの内容をRefreshすることができるものらしい．まんまPullToRefreshっすね．&lt;/p&gt;
+
+&lt;p&gt;使い方とっても簡単，対象のViewをSwipeRefreshLayoutの子要素にして，ソースでonRefreshListenerを実装するだけ．&lt;/p&gt;
+
+&lt;p&gt;まず，対象のViewをSwipeRefreshLayoutの子要素にする．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;android.support.v4.widget.SwipeRefreshLayout
+	android:id=&amp;quot;@+id/swipeRefreshLayout&amp;quot;
+	android:layout_width=&amp;quot;match_parent&amp;quot;
+	android:layout_height=&amp;quot;match_parent&amp;quot; &amp;gt;
+
+	&amp;lt;android.support.v7.widget.RecyclerView
+		android:id=&amp;quot;@+id/recyclerView&amp;quot;
+		android:layout_width=&amp;quot;match_parent&amp;quot;
+		android:layout_height=&amp;quot;match_parent&amp;quot; /&amp;gt;
+&amp;lt;/android.support.v4.widget.SwipeRefreshLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次にソース側でonRefreshListenerを実装する&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;class MainActivity : SwipeRefreshLayout.onRefreshListener {
+	val swipeRefreshLayout: SwipeRefreshLayout by lazy {
+		findViewById(R.id.swipeRefreshLayout) as SwipeRefreshLayout
+	}
+
+	override fun onCreate(savedInstance: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+
+		swipeRefreshLayout.setOnRefreshListener(this)
+	}
+
+	override onRefresh() {
+		// ここにPullToRefresh時の実装を書く
+		swipeRefreshLayout.isRefresing = false //progress barを消す
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とりあえずこれだけでPullToRefreshっぽい挙動はする．ただ，何の実装もしないで動かすとすぐprogress barが消えちゃうので，時間調整とかはしたほうが良いかもしれない．&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;予想外に簡単に実装できてびっくりした．単純にPullToRefreshができるようになるだけでもかなりそれっぽいアプリになるなーという感じ．次は，RecyclerViewでスクロール時のloadingを試してみたいなーと考えている．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>kotlin入門: android studioでkotlinを使う</title>
       <link>http://shogo-ma.github.io/post/kotlin-first/</link>
       <pubDate>Sat, 14 May 2016 00:03:52 +0900</pubDate>
