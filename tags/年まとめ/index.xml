@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>log</title>
+    <link>http://shogo-ma.github.io/tags/%E5%B9%B4%E3%81%BE%E3%81%A8%E3%82%81/index.xml</link>
+    <description>Recent content on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Written by shogo-ma</copyright>
+    <atom:link href="http://shogo-ma.github.io/tags/%E5%B9%B4%E3%81%BE%E3%81%A8%E3%82%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2016年の振り返り</title>
+      <link>http://shogo-ma.github.io/post/2016-summary/</link>
+      <pubDate>Wed, 28 Dec 2016 11:54:51 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/2016-summary/</guid>
+      <description>
+
+&lt;p&gt;今年は色々な変化があった年だったように思う．以下に簡単に列挙する．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;学生から社会人に&lt;/li&gt;
+&lt;li&gt;田舎の山奥から東京に引越し&lt;/li&gt;
+&lt;li&gt;胃酸過多からの食道炎の発症（現在悪化中）&lt;/li&gt;
+&lt;li&gt;時間があるときにいろんな企業に遊びに行くようになった&lt;/li&gt;
+&lt;li&gt;今まで全く触ったことのなかったインフラ周りを触るようになった&lt;/li&gt;
+&lt;li&gt;同じく全く触ったことのなかったPHPを触るようになった&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;個人的には業務に全てを振り回された一年だったように思う．入った会社で自分のバックグラウンドをガン無視されたときは，この会社にいる意味あるのだろうかと思ったが，今まで自分が触ってこなかった領域の知識が色々身についたのでなんだかんだで満足している（食道炎になったけど）．&lt;/p&gt;
+
+&lt;p&gt;来年は今年にあったことについて反省して自分から行動を起こせるようにしたいと思う．&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
