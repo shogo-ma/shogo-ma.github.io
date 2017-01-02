@@ -7,8 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Written by shogo-ma</copyright>
-    <lastBuildDate>Wed, 28 Dec 2016 11:54:51 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2017 21:31:06 +0900</lastBuildDate>
     <atom:link href="http://shogo-ma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017年の目標</title>
+      <link>http://shogo-ma.github.io/post/2017/</link>
+      <pubDate>Mon, 02 Jan 2017 21:31:06 +0900</pubDate>
+      
+      <guid>http://shogo-ma.github.io/post/2017/</guid>
+      <description>
+
+&lt;p&gt;あけましておめでとうございます．2017年が始まってしまったので，目標なんかを書こうと思います．今年の目標ですが，昨年がかなりアバウトに目標を決めた結果，結局最後までよく分からず終わってしまったので，今年はもう少し具体的に決めようと思います（決めたからと言って達成できるとは言えないけど）．&lt;/p&gt;
+
+&lt;h2 id=&#34;開発&#34;&gt;開発&lt;/h2&gt;
+
+&lt;p&gt;昨年の11月末ぐらいに自分に何もないことを実感したので，一ヶ月ぐらい継続的に何かしら作っているので，それをさらに継続していく予定．あと作っているものをどんどん公開していきたい．以下にざっくりとした細かい目標を．
+- 今年中にAndroidアプリを5本出す
+    - 品質というよりもどちらかというと自分のスキルアップ目的が強い．
+    - 一本は昨年からぽちぽち作ってるのでもう少しで出すと思う．
+- 勉強会みたいな社外の活動に参加する
+- Githubに芝生を生やす&lt;/p&gt;
+
+&lt;h2 id=&#34;基礎勉強&#34;&gt;基礎勉強&lt;/h2&gt;
+
+&lt;p&gt;仮にも情報系で自然言語処理をやっていたにもかかわらず，語学・数学にかなり弱いので何かしら目に見える形で成果を出したい．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;統計の復習
+
+&lt;ul&gt;
+&lt;li&gt;とりあえず，統計検定2級の合格を目指す．&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;線形代数の復習
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.co.jp/まずはこの一冊から-意味がわかる線形代数-BERET-SCIENCE-石井/dp/4860642880&#34;&gt;意味がわかる線形代数&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;英語頑張る&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;心も体も健康になりたい&lt;/li&gt;
+&lt;li&gt;もうちょい積極的に競プロ頑張りたい&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2016年の振り返り</title>
@@ -631,29 +677,6 @@ eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;
 &lt;/ul&gt;
 
 &lt;p&gt;ぐらい。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>golangでmap同士を比較する</title>
-      <link>http://shogo-ma.github.io/post/deepequal/</link>
-      <pubDate>Sun, 26 Jul 2015 03:56:32 +0900</pubDate>
-      
-      <guid>http://shogo-ma.github.io/post/deepequal/</guid>
-      <description>&lt;p&gt;golangでmapを比較するときにどうしたらいいかと思って調べてみると思いの外簡単だった&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
-import &amp;quot;reflect&amp;quot;
-
-x := map[string]bool{&amp;quot;a&amp;quot; : true, &amp;quot;b&amp;quot; : true}
-y := map[string]bool{&amp;quot;a&amp;quot; : true, &amp;quot;c&amp;quot; : true}
-z := map[string]bool{&amp;quot;a&amp;quot; : true, &amp;quot;b&amp;quot; : true}
-
-reflect.DeepEqual(x, y) // false
-reflect.DeepEqual(x, z) // true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;reflectって便利&lt;/p&gt;
 </description>
     </item>
     
